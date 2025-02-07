@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run-java",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c", 
+                "javac ${file} && java -cp ${workspaceFolder} ${relativeFileDirname}.${fileBasenameNoExtension} < ${workspaceFolder}/input.txt > ${workspaceFolder}/output.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "detail": "Compiles and runs the current Java file with input from input.txt and output to output.txt, supporting packages."
+        }
+    ]
+}
