@@ -1,6 +1,8 @@
 Positive number
 Zero
+20
 Wednesday
+7 AM
 Count: 1
 Count: 2
 Count: 3

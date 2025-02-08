@@ -21,9 +21,9 @@ public class controlflow {
 		}
 
 		// ternary operator
-		int i = 10;
-		int j = 20;
-		int result = (i > j) ? i : j;
+		int c = 10;
+		int d = 20;
+		int result = (c > d) ?c: d;
 		System.out.println(result); 
 
 
@@ -42,6 +42,30 @@ public class controlflow {
 			default:
 				System.out.println("Other day");
 		}
+
+		// 	NEW SWITCH CASE
+		String dayString = "Wednesday";
+		String res = "";
+
+		switch (dayString) {
+			case "Saturday", "Sunday" -> System.out.println("Weekend");
+			case "Monday" -> System.out.println("8 AM");
+			default -> res = "10 AM";
+		}
+		
+		res = switch (dayString) {
+			case "Saturday", "Sunday" -> "Weekend";
+			case "Monday" -> "8 AM";
+			default -> "10 AM";
+		};
+
+		res = switch (dayString) {
+			case "Saturday", "Sunday" : yield "Weekend";
+			case "Monday" : yield "8 AM";
+			default : yield "10 AM";
+		};
+
+		System.out.println(res);
 
 		// LOOP:
 		// do-while
