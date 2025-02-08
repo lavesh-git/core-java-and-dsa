@@ -2,26 +2,31 @@ Positive number
 Zero
 20
 Wednesday
-7 AM
-Count: 1
-Count: 2
-Count: 3
-Count: 4
-Count: 5
-Count: 1
-Count: 2
-Count: 3
-Count: 4
-Count: 5
-Count: 1
-Count: 2
-Count: 3
-Count: 4
-Count: 5
-10
-20
-30
-40
+10 AM
+Do-While: 1
+Do-While: 2
+Do-While: 3
+Do-While: 4
+Do-While: 5
+While: 9
+While: 8
+While: 7
+While: 6
+While: 5
+While: 4
+While: 3
+While: 2
+While: 1
+While: 0
+For: 1
+For: 2
+For: 3
+For: 4
+For: 5
+for-each: 10
+for-each: 20
+for-each: 30
+for-each: 40
 Count: 1
 Count: 2
 Count: 1

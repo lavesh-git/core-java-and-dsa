@@ -69,28 +69,42 @@ public class controlflow {
 
 		// LOOP:
 		// do-while
-		int i = 1;
+		int i = 1; // iterator variable
 		do {
-			System.out.println("Count: " + i);
+			System.out.println("Do-While: " + i);
 			i++;
 		} while (i <= 5);
 
 		// while
-		int j = 1;
-		while (j <= 5) {
-			System.out.println("Count: " + j);
-			j++;
+		int j = 9;
+		while (j >= 0) {
+			System.out.println("While: " + j);
+			j--;
 		}
 
 		// for
 		for (int k = 1; k <= 5; k++) {
-			System.out.println("Count: " + k);
+			System.out.println("For: " + k);
 		}
+
+		int m = 1;
+		for(; m<= 9 ;){
+			System.out.println("For: " + m);
+			m++;
+		}
+
+		// nested for
+		for (int l = 1; l <= 3; l++) {
+			for (int n = 1; n <= 3; n++) {
+				System.out.println("Nested For: " + l + " " + n);
+			}
+		}
+
 
 		// for-each
 		int[] numbers = {10, 20, 30, 40};
 		for (int x : numbers) {
-			System.out.println(x);
+			System.out.println("for-each: " + x);
 		}
 
 		// JUMP
